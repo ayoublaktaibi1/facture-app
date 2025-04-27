@@ -1,7 +1,7 @@
 // src/services/api.js
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'httpd://facture-server.up.railway.app/api';
 
 // Configurer les headers pour les requêtes authentifiées
 const setAuthToken = (token) => {
