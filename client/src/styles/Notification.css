@@ -1,0 +1,40 @@
+/* styles/Notification.css */
+.notification {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    padding: 15px 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    color: white;
+    font-weight: 500;
+    z-index: 1000;
+    animation: slide-in 0.3s ease-out;
+  }
+  
+  @keyframes slide-in {
+    from {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .notification.success {
+    background-color: #2ecc71;
+  }
+  
+  .notification.error {
+    background-color: #e74c3c;
+  }
+  
+  .notification.info {
+    background-color: #3498db;
+  }
+  
+  .notification.warning {
+    background-color: #f39c12;
+  }

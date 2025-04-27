@@ -1,0 +1,29 @@
+/* styles/FactureFooter.css */
+.facture-footer {
+  margin-top: 40px;
+}
+
+.totals-in-words {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border-left: 4px solid #2ecc71;
+}
+
+.totals-in-words p {
+  margin-bottom: 5px;
+}
+
+.amount-in-words {
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 15px !important;
+  text-transform: capitalize;
+}
+
+.footer-actions {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}

@@ -1,0 +1,116 @@
+/* styles/FactureHeader.css */
+.facture-header {
+    margin-bottom: 30px;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 20px;
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .titre-bouton {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .titre-bouton h2 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+  }
+
+  .titre-bouton .btn-seller-edit {
+    font-size: 1.6rem;
+    color: #2c3e5077;
+    background: none;
+    border: none;
+  }
+  
+  .seller-info p {
+    margin-bottom: 5px;
+    color: #7f8c8d;
+  }
+  
+  .seller-details {
+    margin-top: 15px;
+    font-size: 0.9rem;
+  }
+  
+  .seller-details p {
+    margin-bottom: 3px;
+  }
+  
+  .facture-info {
+    text-align: right;
+  }
+  
+  .facture-info h2 {
+    font-size: 1.5rem;
+    color: #e74c3c;
+    margin-bottom: 10px;
+  }
+  
+  .facture-info p {
+    margin-bottom: 5px;
+  }
+  
+  .header-edit-form {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .header-content {
+      flex-direction: column;
+      gap: 25px;
+    }
+    
+    .titre-bouton {
+      margin-bottom: 15px;
+    }
+    
+    .titre-bouton h2 {
+      font-size: 1.6rem;
+    }
+    
+    .facture-info {
+      text-align: left;
+      width: 100%;
+    }
+    
+    .facture-info h2 {
+      font-size: 1.3rem;
+      margin-bottom: 12px;
+    }
+    
+    .seller-info p, 
+    .facture-info p {
+      font-size: 1.05rem;
+      margin-bottom: 8px;
+    }
+    
+    .seller-details {
+      font-size: 1.05rem;
+    }
+    
+    .header-edit-form {
+      padding: 15px;
+      margin-bottom: 15px;
+    }
+    
+    .form-actions {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }

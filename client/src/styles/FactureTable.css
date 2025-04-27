@@ -1,0 +1,103 @@
+/* styles/FactureTable.css */
+.facture-table {
+    margin-bottom: 30px;
+    overflow-x: auto;
+}
+
+.facture-table table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
+.facture-table th,
+.facture-table td {
+  padding: 12px 15px;
+  text-align: center;
+  border: 1px solid #e1e1e1;
+}
+
+.facture-table th {
+  background-color: #34495e;
+  color: white;
+  font-weight: 500;
+}
+
+.facture-table tr:hover {
+  background-color: #ecf0f1;
+}
+
+.empty-table {
+  text-align: center;
+  padding: 30px !important;
+  color: #7f8c8d;
+  font-style: italic;
+}
+
+.btn-remove {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-remove:hover {
+  background-color: #c0392b;
+}
+
+.total-label {
+  text-align: right !important;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.total-value {
+  font-weight: bold;
+  font-size: 1.1rem;
+  background-color: #eafaf1;
+}
+
+tfoot tr {
+  border-top: 2px solid #34495e;
+}
+
+@media (max-width: 768px) {
+  .facture-table {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .facture-table table {
+    min-width: 950px;
+    font-size: 14px;
+  }
+  
+  .facture-table th {
+    white-space: nowrap;
+    font-size: 15px;
+    padding: 10px 15px;
+  }
+  
+  .facture-table td {
+    padding: 10px 15px;
+  }
+  
+  .btn-remove {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+  
+  .total-label,
+  .total-value {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  
+  .empty-table {
+    padding: 20px !important;
+    font-size: 15px;
+  }
+}
