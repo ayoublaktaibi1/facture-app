@@ -37,6 +37,10 @@ const auth = async (req, res, next) => {
   }
 };
 
+app.get('/', (req, res) => {
+  res.send('Server is running!');
+});
+
 // Route d'inscription
 app.post('/api/register', async (req, res) => {
   try {
