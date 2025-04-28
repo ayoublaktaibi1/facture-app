@@ -9,7 +9,10 @@ const User = require('./models/User');
 // Configuration
 dotenv.config();
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: 'https://facture-app-flax.vercel.app',
+  credentials: true
+}));
 app.use(express.json());
 
 // Connexion à MongoDB Atlas
