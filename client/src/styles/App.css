@@ -217,6 +217,7 @@ a.btn-generate-pdf {
   
   .user-controls {
     gap: 5px;
+    padding: 0;
     margin-bottom: 30px;
   }
 
@@ -226,6 +227,7 @@ a.btn-generate-pdf {
 
   .user-controls img {
     height: 35px;
+    margin-right: 5px;
   }
   
   .user-controls button {
