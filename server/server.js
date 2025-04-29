@@ -152,16 +152,17 @@ app.put('/api/user', auth, async (req, res) => {
 // Route pour incrémenter le numéro de facture
 app.get('/api/change-facture-number', auth, async (req, res) => {
   try {
+    const { currentNumber } = req.query;
     const user = await User.findById(req.user.id);
+    
     if (!user) {
       return res.status(404).json({ message: 'Utilisateur non trouvé' });
     }
-    
-    // Incrémenter le numéro de facture
+        
     user.factureNumber += 1;
     await user.save();
     
-    res.json({ factureNumber: user.factureNumber });
+    res.json(user.factureNumber);
   } catch (err) {
     console.error(err);
     res.status(500).json({ message: 'Erreur serveur' });
