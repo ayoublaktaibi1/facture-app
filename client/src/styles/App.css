@@ -189,13 +189,18 @@ a.btn-generate-pdf {
   }
   
   .btn-add,
-  .btn-edit,
   .btn-save,
   .btn-cancel,
   .btn-generate-pdf {
     font-size: 18px;
-    padding: 12px 18px;
+    padding: 10px 12px;
     width: 100%;
+    margin-top: 10px;
+  }
+  
+  .btn-edit {
+    font-size: 16px;
+    padding: 10px 12px;
     margin-top: 10px;
   }
   
