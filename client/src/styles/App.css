@@ -18,10 +18,6 @@ body {
   padding: 20px;
 }
 
-h1 {
-  color: #2c3e50;
-}
-
 .facture-container {
   max-width: 1100px;
   margin: 0 auto;
@@ -146,6 +142,16 @@ a.btn-generate-pdf {
   margin-bottom: 40px;
 }
 
+.user-controls img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.user-controls h1 {
+  color: #2c3e50;
+  margin-right: auto;
+}
+
 .user-controls button {
   padding: 10px 18px;
   border: none;
@@ -166,12 +172,7 @@ a.btn-generate-pdf {
   body {
     font-size: 16px;
   }
-  
-  h1 {
-    font-size: 26px;
-    line-height: 1.2;
-  }
-  
+    
   h2 {
     font-size: 20px;
   }
@@ -218,9 +219,17 @@ a.btn-generate-pdf {
     gap: 5px;
     margin-bottom: 30px;
   }
+
+  .user-controls h1 {
+    font-size: 24px;
+  }
+
+  .user-controls img {
+    height: 35px;
+  }
   
   .user-controls button {
     font-size: 16px;
-    padding: 12px;
+    padding: 8px 12px;
   }
 }
