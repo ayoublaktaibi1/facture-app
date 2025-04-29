@@ -178,7 +178,8 @@ function App() {
       ) : (
         <>
           <div className="user-controls">
-            <h1>Générez vos factures</h1>
+            <img src="/realfacture.svg"/>
+            <h1>Realfacture</h1>
             <button onClick={handleLogout}>Déconnexion</button>
           </div>
           
