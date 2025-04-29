@@ -78,13 +78,13 @@ tfoot tr {
   .facture-table th {
     white-space: nowrap;
     font-size: 15px;
-    padding: 10px 15px;
+    padding: 7px 15px;
   }
   
   .facture-table td {
-    padding: 10px 15px;
+    padding: 7px 15px;
   }
-  
+    
   .btn-remove {
     padding: 6px 12px;
     font-size: 14px;
