@@ -22,6 +22,11 @@ function FactureFooter({ totals, clientInfo, items, showNotification, updateClie
 
   const handlePDFDownload = async () => {
     try {
+      const token = localStorage.getItem('token');
+      if (!token) {
+        showNotification('Veuillez vous reconnecter', 'error');
+        return;
+      }
       // Appeler l'API pour incrémenter le numéro de facture
       const newFactureNumber = await api.changeFactureNumber(clientInfo.factureNumber);
       
