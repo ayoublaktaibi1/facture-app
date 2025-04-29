@@ -87,7 +87,6 @@ function FactureForm({ addItem }) {
             name="designation"
             value={formData.designation}
             onChange={handleChange}
-            placeholder="Ex: Paire Optique"
             required
           />
         </div>
