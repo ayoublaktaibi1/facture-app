@@ -54,7 +54,6 @@ function FactureHeader({ clientInfo, updateClientInfo }) {
                 name="clientName"
                 value={editedInfo.clientName}
                 onChange={handleClientChange}
-                placeholder="Nom du client"
               />
             </div>
             <div className="form-group">
