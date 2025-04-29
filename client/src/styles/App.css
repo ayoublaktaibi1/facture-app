@@ -184,15 +184,15 @@ a.btn-generate-pdf {
   
   .form-group input,
   .form-group select {
-    font-size: 18px; /* Champs plus grands pour mobile */
-    padding: 12px;
+    font-size: 16px; /* Champs plus grands pour mobile */
+    padding: 10px 12px;
   }
   
   .btn-add,
   .btn-save,
   .btn-cancel,
   .btn-generate-pdf {
-    font-size: 18px;
+    font-size: 16px;
     padding: 10px 12px;
     width: 100%;
     margin-top: 10px;
