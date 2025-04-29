@@ -58,8 +58,8 @@ const api = {
   },
   
   // incrémenter le numéro de facture
-  changeFactureNumber: async () => {
-    const res = await axios.get(`${API_URL}/change-facture-number`);
+  changeFactureNumber: async (currentNumber) => {
+    const res = await axios.get(`${API_URL}/change-facture-number`, {params: { currentNumber}});
     return res.data.factureNumber;
   }
 };
